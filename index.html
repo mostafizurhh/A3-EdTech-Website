@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMR Easy Learning</title>
     <!-- custom css link -->
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
     <!------------- bootstrap link -------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
@@ -16,9 +16,9 @@
     <script src="https://kit.fontawesome.com/f3a04868c8.js" crossorigin="anonymous"></script>
 
     <!------------------ google font ------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> -->
 
 </head>
 
@@ -189,47 +189,158 @@
             </div>
         </section>
         <!----------------------- course button ----------------------->
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <div>
-                <button type="button" class="btn btn-primary mb-5 d-none d-lg-block opacity-75">See More
-                    Courses</button>
+        <section>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <button type="button" class="btn btn-primary mb-5 d-none d-lg-block opacity-75">See More
+                        Courses</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary mb-5 d-lg-none opacity-75">View All</button>
+                </div>
             </div>
-            <div>
-                <button type="button" class="btn btn-primary mb-5 d-lg-none opacity-75">View All</button>
-            </div>
-        </div>
+        </section>
         <!------------------------ explore learning institute ---------------->
-        <div class="d-flex mt-5 flex-column align-items-center d-md-flex flex-md-row bg-light">
-            <div>
-                <img class="img-fluid" src="images/working.png" alt="">
+        <section>
+            <div class="d-flex mt-5 flex-column align-items-center d-md-flex flex-md-row bg-light">
+                <div>
+                    <img class="img-fluid" src="images/working.png" alt="">
+                </div>
+                <div>
+                    <div class="ms-sm-5 pt-3 d-flex flex-column">
+                        <h2> Explore The Learning Institute</h2>
+                        <p>The Learning Institute provides opportunities for individuals and communities through high
+                            quality
+                            education, training and research programmes that challenge personal barriers and promote
+                            social
+                            inclusion.
+                        </p>
+                        <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between me-sm-5 pe-lg-5 me-5">
+                            <div>
+                                <h1>3.2K+</h1>
+                                <P>Online Course</P>
+                            </div>
+                            <div>
+                                <h1>600+</h1>
+                                <P>Expert Member</P>
+                            </div>
+                            <div>
+                                <h1>1K+</h1>
+                                <P>Rating & Reviews</P>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary opacity-75 ms-sm-5">Read More</button>
+                </div>
             </div>
-            <div>
-                <div class="ms-sm-5 pt-3 d-flex flex-column">
-                    <h2> Explore The Learning Institute</h2>
-                    <p>The Learning Institute provides opportunities for individuals and communities through high
-                        quality
-                        education, training and research programmes that challenge personal barriers and promote social
-                        inclusion.
-                    </p>
-                    <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between me-sm-5 pe-lg-5 me-5">
-                        <div>
-                            <h1>3.2K+</h1>
-                            <P>Online Course</P>
+        </section>
+        <!------------------------ Ready to join section ---------------------->
+        <section>
+            <div class="px-4 bg-primary mt-5 mb-5">
+                <div class="row gx-5 ">
+                    <div class="col ">
+                        <div class="p-lg-5 m-sm-5 m-lg-0 text-white text-center text-lg-start">
+                            <h1>Ready to join?</h1>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of
+                                a page
+                                when looking at its layout.
+                            </p>
                         </div>
-                        <div>
-                            <h1>600+</h1>
-                            <P>Expert Member</P>
-                        </div>
-                        <div>
-                            <h1>1K+</h1>
-                            <P>Rating & Reviews</P>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="p-lg-5 m-sm-5 p-5">
+                            <button type="button" class=" btn btn-outline-primary bg-white  text-primary"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Register Now
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">New Student</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control"
+                                                        placeholder="Enter your email">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="number" class="form-control"
+                                                        placeholder="Enter your phone number">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Register</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary opacity-75 ms-sm-5">Read More</button>
             </div>
-        </div>
+        </section>
+        <!------------------------ successfull student ---------------------->
+        <section>
+            <div class="d-flex flex-column text-center text-lg-start pt-5 pb-5">
+                <h1>Meet Our Successfull Students</h1>
+                <p>It is a long established fact that a reader will be
+                    distracted by the readable content of a page when
+                    looking at its layout.</p>
+            </div>
 
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-sm-6 col-12 d-none d-sm-block">
+                        <div class="border bg-light">
+                            <img class="img-fluid w-100 h-100" src="images/student/student-1.png" alt="">
+                            <div class="ms-2 mt-3 p-0">
+                                <h5>Nik Johnson</h5>
+                                <p class="text-muted">UIUX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="border bg-light">
+                            <img class="img-fluid w-100 h-100" src="images/student/student-2.png" alt="">
+                            <div class="ms-2 mt-3 p-0">
+                                <h5>Angelina Thompson</h5>
+                                <p class="text-muted">Motion Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="border bg-light">
+                            <img class="img-fluid w-100 h-100" src="images/student/student-3.png" alt="">
+                            <div class="ms-2 mt-3 p-0">
+                                <h5>Mike Johnson</h5>
+                                <p class="text-muted">Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="border bg-light">
+                            <img class="img-fluid w-100 h-100" src="images/student/student-4.png" alt="">
+                            <div class="ms-2 mt-3 p-0">
+                                <h5>Julia Johnson</h5>
+                                <p class="text-muted">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-5">
+                    <button type="button" class="btn btn-primary opacity-75 d-sm-none d-lg-block">View All</button>
+                </div>
+            </div>
+        </section>
     </main>
     <!-------------- bootstrap js ------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
