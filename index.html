@@ -369,8 +369,11 @@
                 <h1>Some Students Feedback</h1>
                 <p>Here are some example of some of our students feedback. You can get a real impact of the courses.</p>
             </div>
-            <div class="d-flex flex-column d-lg-flex flex-lg-row gap-3">
-                <div class="border rounded-2 p-4">
+            <div class="d-flex flex-column d-lg-flex flex-lg-row gap-3 position-relative">
+                <div class="position-absolute top-50 start-0 translate-middle text-center">
+                    <img class="bg-primary rounded-circle opacity-50" src="images/angle-circle-left.png" alt="">
+                </div>
+                <div class="border rounded-2 p-4 ">
                     <div class="d-flex justify-content-between mb-3">
                         <img src="images/comma.png" alt="">
                         <div>
@@ -422,10 +425,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="position-absolute top-50 start-100 translate-middle text-center">
+                    <img class="bg-primary rounded-circle opacity-75" src="images/angle-circle-right.png" alt="">
+                </div>
             </div>
             <div class="text-center m-5 d-lg-none">
                 <button type="button" class="btn btn-primary opacity-75">View All</button>
             </div>
+
         </Section>
         <!----------------------------- FAQ section ---------------------------->
         <section>
@@ -447,23 +454,10 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>1. Grid is made for two-dimensional layout while Flexbox is for one. This means
+                                    <p>Grid is made for two-dimensional layout while Flexbox is for one. This means
                                         Flexbox can work on either row or columns at a time, but Grids can work on both.
-                                        <br>
-                                        2. Flexbox, gives more flexibility while working on either element (row or
+                                        Flexbox, gives more flexibility while working on either element (row or
                                         column). HTML markup and CSS will be easy to manage in this type of scenario.
-                                        <br>
-                                        3. GRID gives more flexibility to move around the blocks irrespective of
-                                        your HTML markup.
-                                        <br>
-                                        4. Grid is better at overlapping. Getting elements to overlap in flexbox
-                                        requires
-                                        looking at traditional stuff, like negative margins, transforms, or absolute
-                                        positioning in order to break out of the flex behavior. With grid, we can place
-                                        items on overlapping grid lines, or even right within the same exact grid cells.
-                                        <br>
-                                        5. Grid is mostly defined on the parent element. In flexbox, most of the layout
-                                        (beyond the very basics) happen on the children.
                                     </p>
                                 </div>
                             </div>
@@ -481,10 +475,6 @@
                                     <p>1. Bootstrap’s utility and layout classes provide you with everything you need to
                                         style a responsive webpage. Where as Tailwind offers predesigned widgets to
                                         build a site from scratch with fast UI development.
-                                        <br>
-                                        2. Sites created using Bootstrap follow the generic pattern that makes them look
-                                        identical. Where as Tailwind CSS uses a set of utility classes to create a neat
-                                        UI with more flexibility and uniqueness.
                                     </p>
                                 </div>
                             </div>
